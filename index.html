@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Todo</title>
+</head>
+<body>
+  <div class="wrapper">
+    <h1 class="title">Todo</h1>
+    <form action="http://localhost:3001/todos" method="POST" id="todo_form" autocomplete="off">
+      <input type="text" name="todo[task]" placeholder="Enter a new todo" id="task_input">
+      <input class="task_submit" type="submit" value="Submit" onclick="window.sendForm(event)" >
+    </form>
+    <div id="container">
+    </div>
+    <footer>
+      <script src="app.js"></script>
+    </footer>
+  </div>  
+</body>
+</html>
